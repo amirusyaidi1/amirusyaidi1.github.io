@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PAYMENT</title>
+  </head>
+  <body>
+    <h2>PAYMENT</h2>
+    <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline1">Debit/Credit card</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2">PayPal</label>
+</div>
+    <form>
+  <div class="form-group">
+    <label for="inputCreditCard">*credit card number: </label>
+    <input type="creditcard" class="form-control" id="inputCreditCard" aria-describedby="creditcard1" placeholder="Enter credit card number">
+  </div>
+
+  <div class="form-group">
+    <label for="inputname">*name: </label>
+    <input type="name" class="form-control" id="inputname" placeholder="name">
+  </div>
+
+  <form>
+  <div class="form-row align-items-center">
+    <label for="inputname">*expiration date: </label>
+    <input type="name" class="form-control" id="inputname" placeholder="name">
+
+    <label for="inputname"> / </label>
+    <input type="name" class="form-control" id="inputname" placeholder="name">
+
+    <div class="col-auto my-1">
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="one">2020</option>
+        <option value="two">2022</option>
+        <option value="three">2024</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="name" class="form-control" id="inputname" placeholder="name">
+      <label for="inputname">*TAC </label>
+    </div>
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+  </body>
+</html>
