@@ -19,8 +19,9 @@ h4 {
 }
 .jumbotron {
     background-image: url("icon2.jpg");
-    background-size: 100%;
+    background-size: 45%;
     font-family: Montserrat, sans-serif;
+    color: black;
 }
 .container-fluid {
     padding: 60px 50px;
