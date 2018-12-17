@@ -1,97 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<title>Amir Rusyaidi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/pic.jpg");
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    display: none;
+}
+.text-center{
+  text-align: center;
+  vertical-align: middle;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
 
-  <title>UniRun</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/icon.jpg">
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+<body>
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-
-
-  /* Main CSS */
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="home.html">HOME</a>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">ABOUT</a></li>
-        <li><a href="result.html">RESULT</a></li>
-        <li><a href="sponsor.html">SPONSOR</a></li>
-        <li><a href="participators.html">PARTICIPATORS</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
     </div>
   </div>
-</nav>
-
-<div class="jumbotron text-center">
-  <h1>UniRun</h1>
 </div>
 
-<div id="sponsor" class="container-fluid text-center bg-grey">
-  <h2>GALLERY</h2><br>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Amir Rusyaidi</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">anything for adventure</span>
+  </div>
+</header>
 
-  <div class="row">
-  <div class="column">
-    <img src="run img/1.jpg" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="run img/2.jpg" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="run img/7.jpg" alt="Mountains" style="width:100%">
-  </div>
-  </div>
-  <div class="row">
-  <div class="column">
-    <img src="run img/8.jpg" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="run img/9.jpg" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="run img/10.jpg" alt="Mountains" style="width:100%">
-  </div>
-  </div>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
 
-<div class="row">
-<div class="column">
-  <img src="run img/11.jpg" alt="Snow" style="width:100%">
-</div>
-<div class="column">
-  <img src="run img/12.jpg" alt="Forest" style="width:100%">
-</div>
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <div class="text-center">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+
+    <h4>Muhammad Amir Rusyaidi bin Yusof</h5>
+    <p>A person who like to try something new and always up for the challenge. Still learning and sometimes quite creative </p>
+    <br>
+    <p>Active in NGO association that invlove in nature and conservation of nature</p>
+  </div>
+  </div>
 </div>
 
-  </div><br>
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>SUKAN UNTUK SEMUA</p>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCE</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">IIUM</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Participation</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bachelor Degree of Information Technology</h5>
+      <p class="w3-text-grey">Second year first sem</p><br>
+
+      <h5>Active members of Adventure and Recreational Club of IIUM</h5>
+      <p class="w3-text-grey">2017/2018</p><br>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Participated in many mountain adventures around peninsular Malaysia</h5>
+      <div class="w3-text-grey">
+        <p>2013: Gunung Ledang</p>
+        <p>2015: </p>
+        <ul>
+          <li>Gunung Irau</li>
+          <li>Gunung Tumang Batak</li>
+          <li>Gunung Liang West & East</li>
+          <li>Bukit Kutu</li>
+          <li>Gunung Suku</li>
+
+        </ul>
+        <p>2016: </p>
+        <ul>
+          <li>Gunung Yong Belar</li>
+          <li>Gunung Charlie</li>
+          <li>Gunung Three Boundaries</li>
+          <li>Gunung 6040</li>
+          <li>Bukit Kutu</li>
+          <li>Gunung Nuang</li>
+          <li>Gunung Rajah</li>
+          <li>Bukit Kutu</li>
+          <li>Gunung Angsi</li>
+          <li>Gunung Ledang</li>
+
+        </ul>
+
+        <p>2017:</p>
+        <ul>
+        <li>Pine Tree</li>
+        <li>Twin Peak</li>
+        <li>Gunung Semangkok</li>
+        <li>Gunung Nuang</li>
+        <li>Gunung Bar Gading</li>
+        <li>Gunung Bongkok</li>
+        <li>Gunung Banlak</li>
+        <li>Gunung Ulu Kinjor</li>
+        <li>Gunung Besar Hantu</li>
+        </ul>
+
+        <p>2018: </p>
+        <ul>
+          <li>Gunung Guling Gantang</li>
+          <li>Gunung Sempah</li>
+          <li>Gunung Datuk</li>
+          <li>Gunung Gagak</li>
+          <li>Gunung Rembau</li>
+          <li>Gunung Korbu</li>
+          <li>Gunung Gayong</li>
+          <li>Gunung Nuang via Janda Baik</li>
+        </ul>
+      </div>
+
+
+      <h5>One of the survivor of survival camp</h5>
+      <p class="w3-text-grey">organised by malaysia outdoor recreation coach</p><br>
+
+      <h5>Participant of basic first aid workshop</h5>
+      <p class="w3-text-grey">organised by ARC of IIUM</p><br>
+
+      <h5>Participant of basic survival skills class</h5>
+      <p class="w3-text-grey">organised by Core Adventure</p><br>
+
+      <h5>Group Leader</h5>
+      <p class="w3-text-grey">guiding ARC of IIUM Kuantan to Twin Peak at Frase Hill</p>
+    </div>
+  </div>
+</div>
+<!-- Gallery area-->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <div class="gallery text-center">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GALLERY</span></h5>
+    <div class="row">
+      <div class="column">
+        <img src="img/1.jpg" alt="Snow" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/2.jpg" alt="Forest" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/3.jpg" alt="Mountains" style="width:100%">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="img/4.jpg" alt="Snow" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/5.jpg" alt="Forest" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="img/6.jpg" alt="Mountains" style="width:100%">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <div class="contact text-center">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <a href="mailto:amir.rusyaidi1@gmail.com"><strong>email:</strong>amir.rusyaidi1@gmail.com</a>
+
+    <!--<p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>-->
+    </div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
 </html>
