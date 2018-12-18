@@ -33,6 +33,8 @@ $(document).ready(function(){
   });
 })
 
+
+// Tabbed Menu
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
@@ -47,4 +49,3 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
-
